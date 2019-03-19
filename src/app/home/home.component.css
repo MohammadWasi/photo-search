@@ -1,0 +1,123 @@
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page {
+  width: 100%;
+  max-width: 1000px;
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 2px;
+  -moz-column-count: 3;
+  -moz-column-gap: 2px;
+  column-count: 3;
+  column-gap: 2px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 4px solid #FE665C;
+  position: relative;
+}
+
+.page:after {
+  content: url('../../assets/page.svg');
+  background-color: #fe665c;
+  position: absolute;
+  left: 16px;
+  bottom: -15px;
+}
+
+.page img {
+  /*align-self: center;*/
+  width: 100% !important;
+  /*max-width: 32.75vw;*/
+  height: auto !important;
+  background: #e0e0e0;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  margin: 2px;
+}
+
+.inner:nth-child(4n+1) {
+  clear: left;
+}
+
+.inner {
+  float: left;
+  margin: 5px;
+}
+
+img:hover {
+  cursor: zoom-in;
+}
+
+p{
+  padding: 8px 16px;
+  background: white;
+  border : 1px solid #eaeaea;
+  margin:8px;
+}
+
+a{
+  color:black;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+.loader_label{
+  margin:8px 8px 8px 0px !important;
+}
+.i_btn_container {
+  margin: auto;
+
+}
+.i_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: #52BAA8;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 100ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+

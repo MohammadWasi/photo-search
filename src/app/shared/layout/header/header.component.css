@@ -1,0 +1,56 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    background: #265381;
+    padding-left:8px;
+    padding-right: 8px;
+    color:white;
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+  box-shadow: 0 4px 6px -6px black;
+}
+
+.header-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-width: 1000px;
+    flex-grow: 1;
+    position: relative;
+}
+
+h1,
+app-search,
+img {
+    align-self: center;
+}
+
+h1 {
+  order:1;
+}
+
+app-search{
+  order:2;
+}
+
+img {
+  order:3;
+}
+
+app-search {
+    flex-grow: 1;
+}
+
+h1{
+  margin:4px;
+}
+
+h1, li{
+  outline:none;
+}
+
+h1:hover, li:hover{
+  cursor: pointer;
+}
+

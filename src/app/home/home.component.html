@@ -1,0 +1,18 @@
+<div class="image-container" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300" (scrolled)="more()">
+
+  <div class="page" *ngFor="let images of imageBox">
+    <div class="img_cotainer" *ngFor="let image of images">
+      <img [src]="image.urls.small" class="border" />
+      <div class="i_btn_container">
+        <button class="i_btn" (click)="uploadImage(image)">Upload</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loader" [hidden]="!loading">
+    <div class="loader_figure"></div>
+    <span class="loader_label">loading</span>
+  </div>
+
+  <p class="message" [hidden]="!errorMessage">{{errorMessage}}</p>
+</div>

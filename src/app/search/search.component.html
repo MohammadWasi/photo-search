@@ -1,0 +1,9 @@
+<form #searchForm="ngForm" name="searchForm">
+  <img class="my-icon" src="assets/search.svg"/>
+  <input id="query"
+         name="query"
+         type="text"
+         autocomplete="off"
+         [(ngModel)]="query"
+         (ngModelChange)="search($event)"/>
+ </form>
